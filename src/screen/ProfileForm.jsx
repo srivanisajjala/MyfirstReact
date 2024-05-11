@@ -18,7 +18,9 @@ const ProfileForm= () => {
                 placeholder='Enter Your Email '/>
             </View>
 
-
+            <View>
+                <Text>HELLO WORLD</Text>
+            </View>
             <View style={styles.inputcontainer}>
              <Ionicons name={'lock-closed-outline'} size={25} color ={Colors.primary}/>
                 <TextInput style= {styles.textinput} 
