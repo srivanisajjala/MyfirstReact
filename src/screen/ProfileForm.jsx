@@ -19,7 +19,7 @@ const ProfileForm= () => {
             </View>
 
             <View>
-                <Text>HELLO WORLD</Text>
+              
             </View>
             <View style={styles.inputcontainer}>
              <Ionicons name={'lock-closed-outline'} size={25} color ={Colors.primary}/>
