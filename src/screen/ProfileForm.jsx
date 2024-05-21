@@ -1,13 +1,15 @@
-import { Image, StyleSheet, Text, View ,Tittle, TouchableOpacity, TextInput} from 'react-native'
+import { Image, StyleSheet, Text, View ,Tittle, TouchableOpacity, TextInput, Alert} from 'react-native'
 import React from 'react'
 import { Colors } from 'react-native/Libraries/NewAppScreen'
 import { fonts } from '../utiles/fonts'
 import Ionicons from  'react-native-vector-icons/Ionicons'
-import Foundation from 'react-native-vector-icons/Foundation'
+import {useState} from 'react'
+
 
 const ProfileForm= () => {
+   
   return (
-    
+   
        
         <View style ={styles.maincontainer}>
       <Text style = {styles.subtitle}>Sign up</Text>
@@ -32,7 +34,7 @@ const ProfileForm= () => {
         
             <View style={styles.inputcontainer}>
              <Ionicons name={'phone-portrait-outline'} size={25} color ={Colors.primary}/>
-                <TextInput style= {styles.textinput} a
+                <TextInput style= {styles.textinput} 
                 placeholder='Enter Your Number '/>
               
 
@@ -42,10 +44,11 @@ const ProfileForm= () => {
         </View>
 
 
-      
+        <View>    
       <TouchableOpacity style ={styles.submitbuttonwraper}>
-      <Text style ={styles.buttoncontainer}>Submit</Text>
+      <Text style ={styles.buttoncontainer} >Submit</Text>
       </TouchableOpacity>
+      </View>  
       </View>
   )
 }
