@@ -3,16 +3,18 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
-
-import RegiterForm from './src/screen/RegiterForm';
+import HomeScreen from './src/screen/HomeScreen';
+import EmailAuthercation from './src/screen/EmailAuthercation';
 const Stack = createNativeStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
     <Stack.Navigator 
-    screenOptions={{headerShown:false}}>
-      <Stack.Screen name="Home" component={RegiterForm} />
+    initialRouteName="Login">
+      <Stack.Screen name="Login" component={EmailAuthercation} />
+      <Stack.Screen name="HomePage" component={ HomeScreen}/>
+
+      
     </Stack.Navigator>
   </NavigationContainer>
 
